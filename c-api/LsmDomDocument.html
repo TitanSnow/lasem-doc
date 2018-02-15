@@ -1,0 +1,790 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LsmDomDocument: Lasem Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Lasem Reference Manual">
+<link rel="up" href="ch03.html" title="DOM">
+<link rel="prev" href="LsmDomNode.html" title="LsmDomNode">
+<link rel="next" href="LsmDomElement.html" title="LsmDomElement">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#LsmDomDocument.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#LsmDomDocument.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="LsmDomNode.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="LsmDomElement.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="LsmDomDocument"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="LsmDomDocument.top_of_page"></a>LsmDomDocument</span></h2>
+<p>LsmDomDocument — Base class for DOM document nodes</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="LsmDomDocument.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="LsmDomDocument.html#LsmDomDocumentCreateFunction" title="LsmDomDocumentCreateFunction ()">*LsmDomDocumentCreateFunction</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-implementation-create-document" title="lsm_dom_implementation_create_document ()">lsm_dom_implementation_create_document</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-implementation-cleanup" title="lsm_dom_implementation_cleanup ()">lsm_dom_implementation_cleanup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-append-from-memory" title="lsm_dom_document_append_from_memory ()">lsm_dom_document_append_from_memory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-new-from-memory" title="lsm_dom_document_new_from_memory ()">lsm_dom_document_new_from_memory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-new-from-path" title="lsm_dom_document_new_from_path ()">lsm_dom_document_new_from_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-new-from-url" title="lsm_dom_document_new_from_url ()">lsm_dom_document_new_from_url</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-save-to-stream" title="lsm_dom_document_save_to_stream ()">lsm_dom_document_save_to_stream</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-save-to-memory" title="lsm_dom_document_save_to_memory ()">lsm_dom_document_save_to_memory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-save-to-path" title="lsm_dom_document_save_to_path ()">lsm_dom_document_save_to_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-save-to-url" title="lsm_dom_document_save_to_url ()">lsm_dom_document_save_to_url</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomElement.html" title="LsmDomElement"><span class="returnvalue">LsmDomElement</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-get-document-element" title="lsm_dom_document_get_document_element ()">lsm_dom_document_get_document_element</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomElement.html" title="LsmDomElement"><span class="returnvalue">LsmDomElement</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-create-element" title="lsm_dom_document_create_element ()">lsm_dom_document_create_element</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomText.html" title="LsmDomText"><span class="returnvalue">LsmDomText</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-create-text-node" title="lsm_dom_document_create_text_node ()">lsm_dom_document_create_text_node</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="LsmDomView.html" title="LsmDomView"><span class="returnvalue">LsmDomView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-create-view" title="lsm_dom_document_create_view ()">lsm_dom_document_create_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-get-url" title="lsm_dom_document_get_url ()">lsm_dom_document_get_url</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-set-url" title="lsm_dom_document_set_url ()">lsm_dom_document_set_url</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-set-path" title="lsm_dom_document_set_path ()">lsm_dom_document_set_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-document-get-href-data" title="lsm_dom_document_get_href_data ()">lsm_dom_document_get_href_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="LsmDomDocument.html#lsm-dom-get-entity" title="lsm_dom_get_entity ()">lsm_dom_get_entity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="LsmDomDocument.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="LsmDomNode.html" title="LsmDomNode">LsmDomNode</a>
+        <span class="lineart">╰──</span> LsmDomDocument
+</pre>
+</div>
+<div class="refsect1">
+<a name="LsmDomDocument.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="LsmDomDocument.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="LsmDomDocumentCreateFunction"></a><h3>LsmDomDocumentCreateFunction ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+<span class="c_punctuation">(</span>*LsmDomDocumentCreateFunction<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-implementation-create-document"></a><h3>lsm_dom_implementation_create_document ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+lsm_dom_implementation_create_document
+                               (<em class="parameter"><code>const <span class="type">char</span> *namespace_uri</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *qualified_name</code></em>);</pre>
+<div class="refsect3">
+<a name="lsm-dom-implementation-create-document.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>namespace_uri</p></td>
+<td class="parameter_description"><p>namespace uri</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>qualified_name</p></td>
+<td class="parameter_description"><p>qualified name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lsm-dom-implementation-create-document.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-implementation-cleanup"></a><h3>lsm_dom_implementation_cleanup ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_implementation_cleanup (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-append-from-memory"></a><h3>lsm_dom_document_append_from_memory ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_document_append_from_memory (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *document</code></em>,
+                                     <em class="parameter"><code><a class="link" href="LsmDomNode.html" title="LsmDomNode"><span class="type">LsmDomNode</span></a> *node</code></em>,
+                                     <em class="parameter"><code>const <span class="type">char</span> *buffer</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gssize"><span class="type">gssize</span></a> size</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Append a chunk of xml tree to an existing document. The resulting nodes will be appended to
+<em class="parameter"><code>node</code></em>
+, or to <em class="parameter"><code>document</code></em>
+ if <em class="parameter"><code>node</code></em>
+ == NULL.</p>
+<p>Size set to -1 indicates the buffer is NULL terminated.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-append-from-memory.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomNode.html" title="LsmDomNode"><span class="type">LsmDomNode</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>a memory buffer holding xml data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of the xml data, in bytes, -1 if NULL terminated</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>an error placeholder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-new-from-memory"></a><h3>lsm_dom_document_new_from_memory ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+lsm_dom_document_new_from_memory (<em class="parameter"><code>const <span class="type">char</span> *buffer</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gssize"><span class="type">gssize</span></a> size</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Create a new document from a memory data buffer.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-new-from-memory.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>xml data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of the data, in bytes, -1 if NULL terminated</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>an error placeholder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-new-from-path"></a><h3>lsm_dom_document_new_from_path ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+lsm_dom_document_new_from_path (<em class="parameter"><code>const <span class="type">char</span> *path</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Create a new document from the data stored in <em class="parameter"><code>path</code></em>
+.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-new-from-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>a file path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>an error placeholder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-new-from-url"></a><h3>lsm_dom_document_new_from_url ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="returnvalue">LsmDomDocument</span></a> *
+lsm_dom_document_new_from_url (<em class="parameter"><code>const <span class="type">char</span> *url</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Create a new document from the data stored at <em class="parameter"><code>url</code></em>
+.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-new-from-url.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>url</p></td>
+<td class="parameter_description"><p>a file url</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>an error placeholder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-save-to-stream"></a><h3>lsm_dom_document_save_to_stream ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_document_save_to_stream (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *document</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gioGOutputStream.html#GOutputStream-struct"><span class="type">GOutputStream</span></a> *stream</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Save <em class="parameter"><code>document</code></em>
+ as an xml representation into <em class="parameter"><code>stream</code></em>
+.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-save-to-stream.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>stream to save to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>an error placeholder</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-save-to-memory"></a><h3>lsm_dom_document_save_to_memory ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_document_save_to_memory (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *document</code></em>,
+                                 <em class="parameter"><code><span class="type">char</span> **buffer</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *size</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Save <em class="parameter"><code>document</code></em>
+ as an xml representation into <em class="parameter"><code>buffer</code></em>
+.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-save-to-memory.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p> placeholder for a pointer to the resulting data buffer. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Out parameter, where caller must allocate storage."><span class="acronym">out callee-allocates</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p> placeholder for the data size. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>][<acronym title="NULL may be passed instead of a pointer to a location."><span class="acronym">optional</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>placeholder for a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-save-to-path"></a><h3>lsm_dom_document_save_to_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_document_save_to_path (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *document</code></em>,
+                               <em class="parameter"><code>const <span class="type">char</span> *path</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Save <em class="parameter"><code>document</code></em>
+ as an xml representation to a file, replacing the already existing file if needed.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-save-to-path.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>a file path</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>placeholder for a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-save-to-url"></a><h3>lsm_dom_document_save_to_url ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_document_save_to_url (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *document</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *url</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Save <em class="parameter"><code>document</code></em>
+ as an xml representation to <em class="parameter"><code>url</code></em>
+, replacing the already existing file if needed.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-save-to-url.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>document</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>url</p></td>
+<td class="parameter_description"><p>an url</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>placeholder for a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-get-document-element"></a><h3>lsm_dom_document_get_document_element ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomElement.html" title="LsmDomElement"><span class="returnvalue">LsmDomElement</span></a> *
+lsm_dom_document_get_document_element (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>);</pre>
+<p>Get the child node that is the root element of the document.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-get-document-element.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomElement.html" title="LsmDomElement"><span class="type">LsmDomElement</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lsm-dom-document-get-document-element.returns"></a><h4>Returns</h4>
+<p> document element. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-create-element"></a><h3>lsm_dom_document_create_element ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomElement.html" title="LsmDomElement"><span class="returnvalue">LsmDomElement</span></a> *
+lsm_dom_document_create_element (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>,
+                                 <em class="parameter"><code>const <span class="type">char</span> *tag_name</code></em>);</pre>
+<p>Create a new element node with a type corresponding to <em class="parameter"><code>tag_name</code></em>
+.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-create-element.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tag_name</p></td>
+<td class="parameter_description"><p>name of the element to create</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lsm-dom-document-create-element.returns"></a><h4>Returns</h4>
+<p> a newly created <a class="link" href="LsmDomElement.html" title="LsmDomElement"><span class="type">LsmDomElement</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-create-text-node"></a><h3>lsm_dom_document_create_text_node ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomText.html" title="LsmDomText"><span class="returnvalue">LsmDomText</span></a> *
+lsm_dom_document_create_text_node (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>,
+                                   <em class="parameter"><code>const <span class="type">char</span> *data</code></em>);</pre>
+<p>Create a text node with <em class="parameter"><code>data</code></em>
+ as its initial content.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-create-text-node.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>content of the text node</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lsm-dom-document-create-text-node.returns"></a><h4>Returns</h4>
+<p> a newly created <a class="link" href="LsmDomText.html" title="LsmDomText"><span class="type">LsmDomText</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-create-view"></a><h3>lsm_dom_document_create_view ()</h3>
+<pre class="programlisting"><a class="link" href="LsmDomView.html" title="LsmDomView"><span class="returnvalue">LsmDomView</span></a> *
+lsm_dom_document_create_view (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>);</pre>
+<p>Create a <a class="link" href="LsmDomView.html" title="LsmDomView"><span class="type">LsmDomView</span></a> for document rendering.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-create-view.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lsm-dom-document-create-view.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="LsmDomView.html" title="LsmDomView"><span class="type">LsmDomView</span></a>. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-get-url"></a><h3>lsm_dom_document_get_url ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+lsm_dom_document_get_url (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>);</pre>
+<p>Get document URL.</p>
+<div class="refsect3">
+<a name="lsm-dom-document-get-url.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lsm-dom-document-get-url.returns"></a><h4>Returns</h4>
+<p> document URL.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-set-url"></a><h3>lsm_dom_document_set_url ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_document_set_url (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *url</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-set-path"></a><h3>lsm_dom_document_set_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+lsm_dom_document_set_path (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>,
+                           <em class="parameter"><code>const <span class="type">char</span> *path</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-document-get-href-data"></a><h3>lsm_dom_document_get_href_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span> *
+lsm_dom_document_get_href_data (<em class="parameter"><code><a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *href</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gsize"><span class="type">gsize</span></a> *size</code></em>);</pre>
+<div class="refsect3">
+<a name="lsm-dom-document-get-href-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="LsmDomDocument.html" title="LsmDomDocument"><span class="type">LsmDomDocument</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>href</p></td>
+<td class="parameter_description"><p>href</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>placeholder for the size of the returned data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="lsm-dom-document-get-href-data.returns"></a><h4>Returns</h4>
+<p> a newly allocated buffer containing the requested data. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="lsm-dom-get-entity"></a><h3>lsm_dom_get_entity ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+lsm_dom_get_entity (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="LsmDomDocument.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

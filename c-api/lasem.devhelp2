@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="Lasem Reference Manual" link="index.html" author="" name="lasem" version="2" language="c">
+  <chapters>
+    <sub name="Overview" link="lasem-overview.html">
+      <sub name="Building and debugging Lasem" link="lasem-building.html"/>
+      <sub name="Required fonts" link="lasem-fonts.html"/>
+    </sub>
+    <sub name="Lasem reference" link="aravis-reference.html">
+      <sub name="DOM" link="ch03.html">
+        <sub name="LsmDomNode" link="LsmDomNode.html"/>
+        <sub name="LsmDomDocument" link="LsmDomDocument.html"/>
+        <sub name="LsmDomElement" link="LsmDomElement.html"/>
+        <sub name="LsmDomCharacterData" link="LsmDomCharacterData.html"/>
+        <sub name="LsmDomText" link="LsmDomText.html"/>
+        <sub name="LsmDomView" link="LsmDomView.html"/>
+        <sub name="LsmDomNodeList" link="lasem-LsmDomNodeList.html"/>
+        <sub name="LsmDomNamedNodeMap" link="lasem-LsmDomNamedNodeMap.html"/>
+        <sub name="LsmDomDocumentFragment" link="lasem-LsmDomDocumentFragment.html"/>
+      </sub>
+      <sub name="Object Hierarchy" link="object-tree.html"/>
+    </sub>
+    <sub name="Appendices" link="pt03.html">
+      <sub name="API Index" link="api-index-full.html"/>
+      <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+      <sub name="Index of new symbols in 0.4" link="ix03.html"/>
+      <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="function" name="lsm_dom_node_get_node_name ()" link="LsmDomNode.html#lsm-dom-node-get-node-name"/>
+    <keyword type="function" name="lsm_dom_node_get_node_value ()" link="LsmDomNode.html#lsm-dom-node-get-node-value"/>
+    <keyword type="function" name="lsm_dom_node_set_node_value ()" link="LsmDomNode.html#lsm-dom-node-set-node-value"/>
+    <keyword type="function" name="lsm_dom_node_get_node_type ()" link="LsmDomNode.html#lsm-dom-node-get-node-type"/>
+    <keyword type="function" name="lsm_dom_node_get_parent_node ()" link="LsmDomNode.html#lsm-dom-node-get-parent-node"/>
+    <keyword type="function" name="lsm_dom_node_get_child_nodes ()" link="LsmDomNode.html#lsm-dom-node-get-child-nodes"/>
+    <keyword type="function" name="lsm_dom_node_get_first_child ()" link="LsmDomNode.html#lsm-dom-node-get-first-child"/>
+    <keyword type="function" name="lsm_dom_node_get_last_child ()" link="LsmDomNode.html#lsm-dom-node-get-last-child"/>
+    <keyword type="function" name="lsm_dom_node_get_previous_sibling ()" link="LsmDomNode.html#lsm-dom-node-get-previous-sibling"/>
+    <keyword type="function" name="lsm_dom_node_get_next_sibling ()" link="LsmDomNode.html#lsm-dom-node-get-next-sibling"/>
+    <keyword type="function" name="lsm_dom_node_get_attributes ()" link="LsmDomNode.html#lsm-dom-node-get-attributes"/>
+    <keyword type="function" name="lsm_dom_node_insert_before ()" link="LsmDomNode.html#lsm-dom-node-insert-before"/>
+    <keyword type="function" name="lsm_dom_node_replace_child ()" link="LsmDomNode.html#lsm-dom-node-replace-child"/>
+    <keyword type="function" name="lsm_dom_node_append_child ()" link="LsmDomNode.html#lsm-dom-node-append-child"/>
+    <keyword type="function" name="lsm_dom_node_remove_child ()" link="LsmDomNode.html#lsm-dom-node-remove-child"/>
+    <keyword type="function" name="lsm_dom_node_has_child_nodes ()" link="LsmDomNode.html#lsm-dom-node-has-child-nodes"/>
+    <keyword type="function" name="lsm_dom_node_changed ()" link="LsmDomNode.html#lsm-dom-node-changed"/>
+    <keyword type="function" name="lsm_dom_node_get_owner_document ()" link="LsmDomNode.html#lsm-dom-node-get-owner-document"/>
+    <keyword type="function" name="LsmDomDocumentCreateFunction ()" link="LsmDomDocument.html#LsmDomDocumentCreateFunction"/>
+    <keyword type="function" name="lsm_dom_implementation_create_document ()" link="LsmDomDocument.html#lsm-dom-implementation-create-document"/>
+    <keyword type="function" name="lsm_dom_implementation_cleanup ()" link="LsmDomDocument.html#lsm-dom-implementation-cleanup"/>
+    <keyword type="function" name="lsm_dom_document_append_from_memory ()" link="LsmDomDocument.html#lsm-dom-document-append-from-memory"/>
+    <keyword type="function" name="lsm_dom_document_new_from_memory ()" link="LsmDomDocument.html#lsm-dom-document-new-from-memory"/>
+    <keyword type="function" name="lsm_dom_document_new_from_path ()" link="LsmDomDocument.html#lsm-dom-document-new-from-path"/>
+    <keyword type="function" name="lsm_dom_document_new_from_url ()" link="LsmDomDocument.html#lsm-dom-document-new-from-url"/>
+    <keyword type="function" name="lsm_dom_document_save_to_stream ()" link="LsmDomDocument.html#lsm-dom-document-save-to-stream"/>
+    <keyword type="function" name="lsm_dom_document_save_to_memory ()" link="LsmDomDocument.html#lsm-dom-document-save-to-memory"/>
+    <keyword type="function" name="lsm_dom_document_save_to_path ()" link="LsmDomDocument.html#lsm-dom-document-save-to-path"/>
+    <keyword type="function" name="lsm_dom_document_save_to_url ()" link="LsmDomDocument.html#lsm-dom-document-save-to-url"/>
+    <keyword type="function" name="lsm_dom_document_get_document_element ()" link="LsmDomDocument.html#lsm-dom-document-get-document-element"/>
+    <keyword type="function" name="lsm_dom_document_create_element ()" link="LsmDomDocument.html#lsm-dom-document-create-element"/>
+    <keyword type="function" name="lsm_dom_document_create_text_node ()" link="LsmDomDocument.html#lsm-dom-document-create-text-node"/>
+    <keyword type="function" name="lsm_dom_document_create_view ()" link="LsmDomDocument.html#lsm-dom-document-create-view"/>
+    <keyword type="function" name="lsm_dom_document_get_url ()" link="LsmDomDocument.html#lsm-dom-document-get-url"/>
+    <keyword type="function" name="lsm_dom_document_set_url ()" link="LsmDomDocument.html#lsm-dom-document-set-url"/>
+    <keyword type="function" name="lsm_dom_document_set_path ()" link="LsmDomDocument.html#lsm-dom-document-set-path"/>
+    <keyword type="function" name="lsm_dom_document_get_href_data ()" link="LsmDomDocument.html#lsm-dom-document-get-href-data"/>
+    <keyword type="function" name="lsm_dom_get_entity ()" link="LsmDomDocument.html#lsm-dom-get-entity"/>
+    <keyword type="function" name="lsm_dom_element_get_tag_name ()" link="LsmDomElement.html#lsm-dom-element-get-tag-name"/>
+    <keyword type="function" name="lsm_dom_element_get_attribute ()" link="LsmDomElement.html#lsm-dom-element-get-attribute"/>
+    <keyword type="function" name="lsm_dom_element_set_attribute ()" link="LsmDomElement.html#lsm-dom-element-set-attribute"/>
+    <keyword type="function" name="lsm_dom_character_data_get_data ()" link="LsmDomCharacterData.html#lsm-dom-character-data-get-data"/>
+    <keyword type="function" name="lsm_dom_character_data_set_data ()" link="LsmDomCharacterData.html#lsm-dom-character-data-set-data"/>
+    <keyword type="function" name="lsm_dom_text_new ()" link="LsmDomText.html#lsm-dom-text-new"/>
+    <keyword type="function" name="lsm_dom_view_get_resolution ()" link="LsmDomView.html#lsm-dom-view-get-resolution"/>
+    <keyword type="function" name="lsm_dom_view_get_viewport ()" link="LsmDomView.html#lsm-dom-view-get-viewport"/>
+    <keyword type="function" name="lsm_dom_view_get_viewport_pixels ()" link="LsmDomView.html#lsm-dom-view-get-viewport-pixels"/>
+    <keyword type="function" name="lsm_dom_view_set_resolution ()" link="LsmDomView.html#lsm-dom-view-set-resolution"/>
+    <keyword type="function" name="lsm_dom_view_set_viewport ()" link="LsmDomView.html#lsm-dom-view-set-viewport"/>
+    <keyword type="function" name="lsm_dom_view_set_viewport_pixels ()" link="LsmDomView.html#lsm-dom-view-set-viewport-pixels"/>
+    <keyword type="function" name="lsm_dom_view_render ()" link="LsmDomView.html#lsm-dom-view-render"/>
+    <keyword type="function" name="lsm_dom_view_get_size ()" link="LsmDomView.html#lsm-dom-view-get-size"/>
+    <keyword type="function" name="lsm_dom_view_get_size_pixels ()" link="LsmDomView.html#lsm-dom-view-get-size-pixels"/>
+    <keyword type="function" name="lsm_dom_view_set_debug ()" link="LsmDomView.html#lsm-dom-view-set-debug"/>
+    <keyword type="function" name="lsm_dom_node_list_get_item ()" link="lasem-LsmDomNodeList.html#lsm-dom-node-list-get-item"/>
+    <keyword type="function" name="lsm_dom_node_list_get_length ()" link="lasem-LsmDomNodeList.html#lsm-dom-node-list-get-length"/>
+    <keyword type="function" name="lsm_dom_node_list_get_type ()" link="lasem-LsmDomNodeList.html#lsm-dom-node-list-get-type"/>
+    <keyword type="function" name="lsm_dom_named_node_map_get_item ()" link="lasem-LsmDomNamedNodeMap.html#lsm-dom-named-node-map-get-item"/>
+    <keyword type="function" name="lsm_dom_named_node_map_get_length ()" link="lasem-LsmDomNamedNodeMap.html#lsm-dom-named-node-map-get-length"/>
+    <keyword type="function" name="lsm_dom_named_node_map_get_named_item ()" link="lasem-LsmDomNamedNodeMap.html#lsm-dom-named-node-map-get-named-item"/>
+    <keyword type="function" name="lsm_dom_named_node_map_set_named_item ()" link="lasem-LsmDomNamedNodeMap.html#lsm-dom-named-node-map-set-named-item"/>
+    <keyword type="function" name="lsm_dom_named_node_map_remove_named_item ()" link="lasem-LsmDomNamedNodeMap.html#lsm-dom-named-node-map-remove-named-item"/>
+    <keyword type="function" name="lsm_dom_document_fragment_new ()" link="lasem-LsmDomDocumentFragment.html#lsm-dom-document-fragment-new"/>
+  </functions>
+</book>
